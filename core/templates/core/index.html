@@ -1,0 +1,13 @@
+{% extends 'core/base.html' %}
+{% load crispy_forms_tags %}
+    {% block content %}
+        {% include 'partials/list.html' %}
+    <div>
+        <form method="POST" autocomplete="off" id="form">
+            {% csrf_token %}
+            {% crispy form %}
+
+        </form>
+    </div>
+{% endblock %}
+

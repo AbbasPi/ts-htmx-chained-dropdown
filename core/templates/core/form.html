@@ -1,0 +1,5 @@
+{% load crispy_forms_tags %}
+<form  hx-post="{% url 'add' %}"  hx-target='ul' hx-swap='beforeend' autocomplete="off" id="form">
+    {% csrf_token %}
+    {% crispy form %}
+</form>

@@ -1,0 +1,9 @@
+<ul class="list-group mb-4">
+    {% for car in cars %}
+        <li class="list-group-item">{{ car.manufacturer }}
+            {{ car.model }}
+            {{ car.price }}
+        </li>
+
+    {% endfor %}
+</ul>
